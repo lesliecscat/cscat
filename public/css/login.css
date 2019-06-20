@@ -1,0 +1,89 @@
+	#login{width:1200px;margin:auto;}
+	#log_msg{
+			height:400px;
+			width:100%;
+			background:url("../images/banner5.jpg") no-repeat 100%;
+		}
+		.log_table{
+			position:absolute;
+			width:400px;
+			top:150px;
+			left:800px;
+			padding:20px 0px;
+			transition:all 1s;
+			background-color:rgba(66,66,66,.2);
+			box-shadow:0px 0px 6px 2px #fff;
+		}
+		.log_table span{
+			color:#fff;
+		}
+		.log_table .pass_inp{
+			margin-left:15px;
+		}
+		.log_table>div:nth-child(1){
+			margin-bottom:20px;
+			margin-left:60px;
+		}
+		.log_table>div:nth-child(2){
+			margin-left:60px;
+		}
+		.log_table>div:nth-child(3){
+			text-align:center;
+		}
+		.log_table>div:nth-child(3) button{
+			margin-left:20px;
+			margin-top:20px;
+			background:#666;
+			border:0;
+			display:inline-block;
+			width:170px;
+			height:30px;
+		}
+		a{
+			color:#fff;
+			text-decoration:none;
+		}
+		.log_table:hover{
+			background-color:rgba(10,161,237,.2);
+			transform:scale(1.05);
+		}
+		.log_table input:hover{
+			border:1px solid #27b1f6;
+			box-shadow:0px 0px 6px 2px #fff;
+		}
+		#modal{
+			width:400px;
+			position:fixed;
+			background:transparent;
+			top:100px;
+			left:400px;
+		}
+		 #err{
+			padding:20px 0px;
+			text-align:center;
+			background:#fff;
+			display:none;
+			transition:transform 1s;
+		}
+		#err:hover{
+			transform:scale(1.1);
+			box-shadow:0px 0px 6px 3px #0aa1ed;
+		}
+		#err p:nth-child(1){
+			font:bold 30px Arial;
+			color:#666;
+			text-align:center;
+		}
+		#err p:nth-child(2){
+			font:16px Arial;
+			color:#666;
+			text-align:center;
+		}
+		#err button{
+			display:inline-block;
+			text-align:center;
+			width:80px;
+			height:40px;
+			background: #00aaaa;;
+		}
+		#err button a{text-decoration:none;color:#666;}

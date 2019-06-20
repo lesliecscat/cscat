@@ -1,0 +1,117 @@
+		a{text-decoration:none;}
+		.text-white{color:#fff;}
+		#header{
+			/* height:300px; */
+			position:relative;
+			width:1200px;
+			margin:auto;
+			background-color:#222;
+				}
+		#header>div{float:left;}
+		#header>div:nth-child(1){
+			font:bold italic 30px Arial;
+			width:20%;
+			color:#fff;
+			margin-top:20px;
+		}
+		#header>div:nth-child(2){
+			width:50%;
+			margin-top:30px;
+			padding-left:100px;
+		}
+		ul{margin:0;padding:0;list-style: none;}
+		#header>div:nth-child(2)>ul>li{
+			float:left;
+			margin-right:20px;
+		}
+		#header>div:nth-child(3) {
+			width: 30%;
+		}
+
+		.drop_menu1,.drop_menu2,.drop_menu3,.drop_menu4{
+			position:absolute;
+			top:50px;
+			color:#666;
+			border-top:1px solid red;
+			background:#fff;
+			display:none;
+			z-index:1001;
+		}
+		.drop_menu4{
+			width:900px;
+			margin-left:-400px;
+		}
+		.drop_menu4 img{
+			margin-right:20px;
+			width:200px;
+		}
+		 .drop_menu1{
+			width:600px;
+			left:20%;
+		}
+		.drop_menu1>ul:nth-child(1){
+			margin-left:140px;
+		}
+		 .drop_menu1 ul{
+			 float:left; 
+			margin-right:10px;
+		}
+		 .drop_menu1 li,.drop_menu2 li,.drop_menu3 li{
+			/* border-bottom:1px solid #666; */
+			font-size:10px;
+			text-align:center;
+			padding:5px 0px;
+		}
+		 .man .drop_menu2{left:40%;width:80px;}
+		 .child .drop_menu3{left:45%;width:80px;}
+		 .new:hover a,.women:hover a,.man:hover a,.child:hover a{background:#fff;color:#666;}
+		 .new:hover .drop_menu4{
+			display:block;
+		}
+		 .women:hover .drop_menu1{
+			display:block;
+		}
+/*		 .man:hover .drop_menu2{*/
+/*			display:block;*/
+/*		}*/
+/*		 .child:hover .drop_menu3{*/
+/*			display:block;*/
+/*		}*/
+		#header>div:nth-child(3){
+			margin-top:30px;
+		}
+		#header>div:nth-child(3)>ul{
+			display:flex;
+			justify-content:space-around;
+		}
+		#header>div:nth-child(3)>ul>li a{
+			color:#fff;
+			font:12px Arimal;
+		}
+		#header{
+			display:flex;
+			justify-content:space-around;
+		}
+		#header>div{
+		box-sizing:border-box;
+		}
+		#header>div:nth-child(2){
+			padding-left:100px;
+		}
+		.clearfix:after{
+			display:block;
+			content:"";
+			clear:both;
+		}
+		/* 登录名显示 */
+#ind_uname{
+	width:150px;
+	border-radius:10px;
+	border:0px;
+	outline:0;
+	padding:5px;
+	text-align:center;
+	background:#666;
+	color:#fff;
+	margin-bottom:5px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>	
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/register.css"/>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+    <style>
+        #success button,#err button{
+			background:linear-gradient(to right,#27b0f6 0%, #27b0f6 100%);
+		}
+    </style>
+</head>
+<body>
+<div id="register">
+	<!--头部-->
+	<header>
+		
+	</header>
+	<!--注册主体-->
+	<div id="reg_msg" class="overmar">
+		<!--注册的左边注册表-->
+		<div class="reg_top"><h2>注册</h2></div>
+		<div class="reg_bottom clearfix">
+			<div class="reg_left">
+				<div>
+					<p>用户名：</p>
+					<input type="text" id="reg_inp" onfocus="name_user()" onblur="name_user_notnull()"/>
+					<span id="reg_users"></span>
+				</div>
+				<div>
+					<p>密码：</p>
+					<input type="text" id="pass_inp" onfocus="pass_user()" onblur="pass_user_notnull()"/>
+					<span id="reg_pass"></span>
+				</div>
+				<div>
+					<p>手机号：</p>
+					<input type="text" id="phone_inp" onfocus="phone_user()" onblur="phone_user_notnull()"/>
+					<span id="reg_phone"></span>
+				</div>
+			</div>
+			<!--注册的右边注册提醒-->
+			<div class="reg_right">
+				<h4>没有账号?</h4>
+				<h6>拥有春生店铺账号获得以下特权：</h6>
+				<ul>
+					<li>保存您的心愿单</li>
+					<li>个性化您的推荐内容</li>
+					<li>订单寄送追踪及退换货处理</li>
+				</ul>
+				<button onclick="register()"><a href="#">注册账户</a></button>
+			</div>
+		</div>
+	</div>
+	<!--注册状态提示莫模态框-->
+	<div id="modal">
+		<!--注册成功模态框-->
+		<div id="success">
+			<p>注册成功</p>
+			<p>点击确定进入登陆界面</p>
+			<button><a href="http://127.0.0.1:8080/login.html">确定</a></button>
+		</div>
+		<!--注册失败模态框-->
+		<div id="err">
+			<p>注册失败</p>
+			<p>点击确定重新注册</p>
+			<button><a href="http://127.0.0.1:8080/register.html">确定</a></button>
+		</div>
+	</div>
+	<!--footer-->
+	<div id="footer">
+		<ul class="clearfix">
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">INFERMATION</a></li>
+			<li><a href="#">LATEST TWEETS</a></li>
+			<li><a href="#">OUR CONTACTS</a></li>
+		</ul>
+		<ul class="clearfix">
+			<li>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iusto atque quos nihil aspernatur dolor quibusdam modi placeat voluptate similique distinctio provident animi dignissimos. Deserunt amet tenetur accusamus perspiciatis vel.
+			</li>
+			<li>
+				<ul>
+					<li><a href="">&gt;Delivery Information</a></li>
+					<li><a href="">&gt;Customer Service</a></li>
+					<li><a href="">&gt;Order Tracking</a></li>
+					<li><a href="">&gt;Shipping & Returns</a></li>
+					<li><a href="">&gt;Contact Us</a></li>
+					<li><a href="">&gt;Careers</a></li>
+					<li><a href="">&gt;Payment Methods</a></li>
+				</ul>
+			</li>
+			<li class="empty "></li>
+			<li>
+				Lorem ipsum dolor sit amet, consectetur adipisicing 
+				elit. Ab minima earum alias nihil quamtemporibus.Email: info@metronic.comSkype: metronic
+			</li>
+		</ul>
+		<div id="copy" class="clearfix">
+			<div>
+				2019 © LIUHUANHUAN ALL Rights Reserved.@chunsheng.home
+			</div>
+			<div>
+				<img src="images/MasterCard.jpg" alt="">
+				<img src="images/PayPal.jpg" alt="">
+				<img src="images/visa.jpg" alt="">
+				<img src="images/western-union.jpg" alt="">
+				<img src="images/american-express.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript" src="js/register.js"> 
+</script>
+
+</html>
